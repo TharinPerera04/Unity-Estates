@@ -1,35 +1,180 @@
 {
 	"properties": [
         {
-            "id":"prop1",
-			"type":"House",
-            "bedrooms":3,
-			"price":750000,
-			"tenure":"Freehold",
-			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
-			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
-			"picture":"images/prop1pic1small.jpg",
-			"url":"properties/prop1.html",
+            "id": "prop1",
+            "type": "Detached House",
+            "bedrooms": 4,
+            "price": 925000,
+            "tenure": "Freehold",
+            "description": "A unique and beautifully presented four bedroom detached residence on Parkhill Road in Bexley DA5. The property offers a large gated driveway, detached double garage, solar panels with 10 kW battery system, air conditioning to principal rooms, and is conveniently located near popular local amenities, schools and transport links.",
+            "location": "Parkhill Road, Bexley, Kent DA5",
+            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.85229127902!2d0.13790817687594753!3d51.443229715388874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ae62ea442057%3A0xa98e43dfd9437b6e!2sParkhill%20Rd%2C%20Bexley%2C%20UK!5e1!3m2!1sen!2slk!4v1766842338223!5m2!1sen!2slk",
+            "picture": "images/prop1/1webp",
+            "url": "https://www.zoopla.co.uk/for-sale/details/68737506/",
             "added": {
-                "month":"October",
-                "day":12,
-                "year":2022
-            }
+                "month": "December",
+                "day": 1,
+                "year": 2025
+            },
+            "pictures": [
+				"/images/prop1/1.webp",
+				"/images/prop1/2.webp",
+				"/images/prop1/3.webp",
+				"/images/prop1/4.webp",
+				"/images/prop1/5.webp",
+				"/images/prop1/6.webp"
+			]
+        },   
+        {
+                "id": "72031998",
+                "type": "Detached House",
+                "bedrooms": 6,
+                "price": 12500000,
+                "tenure": "Freehold",
+                "description": "A spectacular six-bedroom detached house on Carlton Hill in London NW8, completely rebuilt and redesigned with exceptional contemporary interiors. The property spans approximately 6,191 sq. ft and combines period character with modern luxury, offering grand entertaining spaces, expansive living areas, and high-end finishes throughout. Outdoor space includes a private garden, with secure off-street parking for multiple vehicles. The home is ideally situated near the shops, cafés and transport links of St John’s Wood, with Regents Park and Primrose Hill close by.",  
+                "location": "Carlton Hill, London NW8",
+                "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.9718726599224!2d-0.1827198247130005!3d51.53551406531528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761aa1f960e9bb%3A0xb37eea83c23d2689!2sCarlton%20Hill%2C%20London%2C%20UK!5e1!3m2!1sen!2slk!4v1766854802736!5m2!1sen!2slk",
+                "picture": "/images/prop2/1.webp",
+                "url": "https://www.zoopla.co.uk/for-sale/details/72031998/",
+                "added": {
+                    "month": "Unknown",
+                    "day": null,
+                    "year": 2025
+            },
+            "pictures": [
+				"/images/prop2/1.webp",
+				"/images/prop2/2.webp",
+				"/images/prop2/3.webp",
+				"/images/prop2/4.webp",
+				"/images/prop2/5.webp",
+				"/images/prop2/6.webp"
+			]
+        },       
+{
+                    "id": "72071052",
+                    "type": "Farmhouse / Land",
+                    "bedrooms": 5,
+                    "price": 2750000,
+                    "tenure": "Freehold",
+                    "description": "An exquisite farmhouse with extensive grounds at Rectory Farm on The Ridgeway, Enfield EN2. Offering five bedrooms, four bathrooms, three reception rooms, and standing on a plot of approximately five acres including additional paddocks and stabling. The property features a grand entrance hall, formal dining room, spacious sitting room with scenic views, traditional farmhouse kitchen with utility room, office, guest WC, and multiple outbuildings including a garage, stable and storage rooms. The landscaped gardens and barn-style spaces provide a rare opportunity for luxurious countryside living close to North London.",  
+                    "location": "Rectory Farm, The Ridgeway, Enfield EN2",
+                    "map": "",
+                    "picture": "images/prop3/1.webp",
+                    "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.9611672523747!2d-0.11161132311313726!3d51.67339749856282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487618a528f4000f%3A0x9536fb64fed06124!2sRectory%20Farm%20Shooting%20Ground!5e1!3m2!1sen!2slk!4v1766856693279!5m2!1sen!2slk",
+                    "added": {
+                        "month": "December",
+                        "day": 26,
+                        "year": 2025
+            },
+            "pictures": [
+				"/images/prop3/1.webp",
+				"/images/prop3/2.webp",
+				"/images/prop3/3.webp",
+				"/images/prop3/4.webp",
+				"/images/prop3/5.webp",
+				"/images/prop3/6.webp"
+			]
         },
-		{
-            "id":"prop2",
-			"type":"Flat",
-            "bedrooms":2,
-			"price":399995,
-			"tenure":"Freehold",
-			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-			"location":"Crofton Road Orpington BR6",
-			"picture":"images/prop2pic1small.jpg",
-			"url":"properties/prop2.html",
-            "added": {
-                "month":"September",
-                "day":14,
-                "year":2022
-            }
+        {
+                    "id": "70648945",
+                    "type": "Detached Bungalow",
+                    "bedrooms": 4,
+                    "price": 1200000,
+                    "tenure": "Freehold",
+                    "description": "An exceptional four-bedroom detached bungalow on The Walk in Potters Bar, EN6. Extended to the rear with a superb open-plan lounge, kitchen and dining space. The ground floor includes two bedrooms, a shower room and utility room, with two further bedrooms upstairs including a modern ensuite. Outside there’s a large rear garden with a garden room/home office, off-street parking and great access to local amenities, schools and transport links.",  
+                    "location": "The Walk, Potters Bar EN6",
+                    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.5062948618797!2d-0.1872045231120683!3d51.69584579691898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487622b233c537c1%3A0xca974b817c63d855!2sThe%20Walk%2C%20Potters%20Bar%2C%20UK!5e1!3m2!1sen!2slk!4v1766856877463!5m2!1sen!2slk",
+                    "picture": "images/prop4/1.webp",
+                    "url": "https://www.zoopla.co.uk/for-sale/details/70648945/",
+                    "added": {
+                        "month": "Unknown",
+                        "day": null,
+                        "year": 2025
+            },
+            "pictures": [
+				"/images/prop4/1.webp",
+				"/images/prop4/2.webp",
+				"/images/prop4/3.webp",
+				"/images/prop4/4.webp",
+				"/images/prop4/5.webp",
+				"/images/prop4/6.webp"
+			]
+        },
+        {
+                    "id": "42110700",
+                    "type": "Flat / Apartment",
+                    "bedrooms": 1,
+                    "price": 750000,
+                    "tenure": "Leasehold",
+                    "description": "Outstanding one bedroom apartment on the 11th floor of the Capital Building at Embassy Gardens, London SW11. Featuring a private river-facing winter garden, high ceilings, walnut parquet flooring, a fully fitted kitchen, luxury bathroom, and abundant natural light. Residents have access to exceptional facilities including indoor and outdoor swimming pools, a fitness suite, private cinema, residents’ lounge and 24-hour concierge. The property is ideally located within walking distance of Battersea Power Station, landscaped gardens and excellent transport links.",
+                    "location": "Capital Building, Embassy Gardens, London SW11",
+                    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.342366073595!2d-0.13768002312219635!3d51.48207641255261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604fca193790d%3A0xd532c61a4145318e!2sCapital%20Building!5e1!3m2!1sen!2slk!4v1766857118128!5m2!1sen!2slk",
+                    "picture": "images/prop5/1.webp",
+                    "url": "https://www.zoopla.co.uk/for-sale/details/42110700/",
+                    "added": {
+                        "month": "Unknown",
+                        "day": null,
+                        "year": 2025
+            },
+            "pictures": [
+				"/images/prop5/1.webp",
+				"/images/prop5/2.webp",
+				"/images/prop5/3.webp",
+				"/images/prop5/4.webp",
+				"/images/prop5/5.webp",
+                "/images/prop5/6.webp"
+                ]
+        },
+        {
+                    "id": "70114030",
+                    "type": "Flat / Apartment",
+                    "bedrooms": 2,
+                    "price": 475000,
+                    "tenure": "Leasehold",
+                    "description": "A purpose-built two bedroom flat positioned on St. Johns Road, Harrow HA1, available for sale. This property features a spacious reception room, fully fitted kitchen, private balcony, underfloor heating, luxury bathroom with en-suite to the master bedroom, built-in wardrobes, secure entry phone system, and a parking space with electric charger in the basement. The development includes landscaped communal gardens and is situated close to Harrow town centre and local train connections. Ideal for first-time buyers or investors.",  
+                    "location": "St. Johns Road, Harrow HA1",
+                    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.9431679686!2d-0.33394352311750963!3d51.581023605321825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761375909067f1%3A0xdbb53071d225c144!2sSt%20John&#39;s%20Rd%2C%20Harrow%2C%20UK!5e1!3m2!1sen!2slk!4v1766857515560!5m2!1sen!2slk",
+                    "picture": "images/prop6/1.webp",
+                    "url": "htts://www.zoopla.co.uk/for-sale/details/70114030/",
+                    "added": {
+                        "month": "Unknown",
+                        "day": null,
+                        "year": 2025
+            },
+            "pictures": [
+				"/images/prop6/1.webp",
+				"/images/prop6/2.webp",
+				"/images/prop6/3.webp",
+				"/images/prop6/4.webp",
+				"/images/prop6/5.webp",
+				"/images/prop6/6.webp"
+			]
+        },
+        {
+                    "id": "72071072",
+                    "type": "Semi-Detached Bungalow",
+                    "bedrooms": 3,
+                    "price": 625000,
+                    "tenure": "Freehold",
+                    "description": "A spacious three bedroom semi-detached bungalow on Villiers Avenue, Twickenham TW2. The property features an elegant reception room with garden views, a modern fitted kitchen, three bedrooms, a smart bathroom, a west-facing rear garden, off-street parking and a garage. It is well presented throughout, with plenty of storage and located within walking distance to Whitton station and local shops and amenities. Viewings are available through the sole agents.",  
+                    "location": "Villiers Avenue, Twickenham TW2",
+                    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.672685358663!2d-0.37988532312394296!3d51.44601021518584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876734c9f70cfcb%3A0x1989e04c2a290df3!2sVilliers%20Ave%2C%20Twickenham%2C%20UK!5e1!3m2!1sen!2slk!4v1766857730569!5m2!1sen!2slk",
+                    "picture": "images/prop7/1.webp",
+                    "url": "https://www.zoopla.co.uk/for-sale/details/72071072/",
+                    "added": {
+                        "month": "Unknown",
+                        "day": null,
+                        "year": 2025
+            },
+            "pictures": [
+				"/images/prop7/1.webp",
+				"/images/prop7/2.webp",
+				"/images/prop7/3.webp",
+				"/images/prop7/4.webp",
+				"/images/prop7/5.webp",
+				"/images/prop7/6.webp"
+			]
         }
+
+
 ]}

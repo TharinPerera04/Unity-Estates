@@ -1,0 +1,85 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body padding so content is not hidden under navbar */
+body {
+  padding-top: 80px; /* navbar height */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Brand name */
+.navbar h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Links container */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Individual links */
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Hover effect */
+.links a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Active click effect */
+.links a:active {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar h1 {
+    font-size: 22px;
+  }
+
+  .links {
+    gap: 16px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
