@@ -1,0 +1,110 @@
+.about-page {
+  background: #f8fafc;
+}
+
+.about-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Top */
+.about-top {
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: #2563eb;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.about-top h2 {
+  margin: 0 0 6px;
+  font-size: 28px;
+  color: #0f172a;
+}
+
+.about-top p {
+  margin: 0;
+  color: #475569;
+}
+
+/* Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.about-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+}
+
+.about-card h3 {
+  margin-top: 0;
+}
+
+.about-card p {
+  color: #334155;
+  line-height: 1.6;
+}
+
+.about-card ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #334155;
+  line-height: 1.8;
+}
+
+/* Features */
+.feature {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.feature h4 {
+  margin: 0 0 6px;
+}
+
+.feature p {
+  margin: 0;
+  color: #475569;
+}
+
+/* Button */
+.primary-btn {
+  display: inline-block;
+  margin-top: 14px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  opacity: 0.95;
+}
+
+.about-footer {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

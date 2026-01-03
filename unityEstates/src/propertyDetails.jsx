@@ -30,25 +30,29 @@ export default function PropertyDetails() {
       ? `£${new Intl.NumberFormat("en-GB").format(price)}`
       : "Price on request";
 
-  /* Safe map embed (no pb errors) */
+  /* Safe map embed */
   const getMapEmbedSrc = (mapValue, location) => {
     const raw = (mapValue || "").trim();
-
-    if (raw.includes("/maps/embed") && raw.includes("pb=")) {
-      return raw;
-    }
-
+    if (raw.includes("/maps/embed") && raw.includes("pb=")) return raw;
     const q = encodeURIComponent(location || "London");
     return `https://www.google.com/maps?q=${q}&output=embed`;
   };
 
   const mapSrc = getMapEmbedSrc(prop.map, prop.location);
 
-  /* Slider */
+  /* ✅ SLIDER SCROLL (NO PAGE JUMP) */
   const scrollToIndex = (i) => {
-    const el = trackRef.current;
-    if (!el) return;
-    el.children[i]?.scrollIntoView({ behavior: "smooth", inline: "start" });
+    const track = trackRef.current;
+    if (!track) return;
+
+    const slide = track.children[i];
+    if (!slide) return;
+
+    track.scrollTo({
+      left: slide.offsetLeft,
+      behavior: "smooth",
+    });
+
     setActive(i);
   };
 
@@ -69,12 +73,15 @@ export default function PropertyDetails() {
 
           <p className="location">{prop.location}</p>
 
-          {/* Image slider */}
+          {/* IMAGE SLIDER */}
           <div className="slider">
             <button
               className="nav"
-              onClick={() => scrollToIndex(Math.max(active - 1, 0))}
               disabled={active === 0}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToIndex(active - 1);
+              }}
             >
               ‹
             </button>
@@ -89,16 +96,17 @@ export default function PropertyDetails() {
 
             <button
               className="nav"
-              onClick={() =>
-                scrollToIndex(Math.min(active + 1, images.length - 1))
-              }
               disabled={active === images.length - 1}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToIndex(active + 1);
+              }}
             >
               ›
             </button>
           </div>
 
-          {/* Dots */}
+          {/* DOTS */}
           <div className="dots">
             {images.map((_, i) => (
               <span
@@ -109,7 +117,7 @@ export default function PropertyDetails() {
             ))}
           </div>
 
-          {/* Floorplan button */}
+          {/* FLOORPLAN */}
           <div className="actions">
             {prop.floorplan ? (
               <a
@@ -131,7 +139,7 @@ export default function PropertyDetails() {
           <p className="desc">{prop.description}</p>
         </div>
 
-        {/* RIGHT COLUMN – MAP */}
+        {/* RIGHT COLUMN */}
         <div className="mapbox">
           <h3>Location</h3>
           <iframe
