@@ -1,24 +1,28 @@
-import { NavLink } from "react-router-dom";
 import "./Footer.css";
+import logo from "../../assets/logo.png";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
 
-        <div className="footer-col footer-brand">
-          <h2>Unity Estates</h2>
-          <p>
-            Trusted real estate partner for buying, selling, and renting
-            premium properties.
+        {/* Logo only */}
+        <div className="footer-brand">
+          <img
+            src={logo}
+            alt="Unity Estates Logo"
+            className="footer-logo"
+          />
+          <p className="footer-tagline">
+            Trusted partner in buying, selling & renting properties
           </p>
         </div>
 
         <div className="footer-col">
           <h4>Quick Links</h4>
-          <NavLink to="/" end>Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </div>
 
         <div className="footer-col">

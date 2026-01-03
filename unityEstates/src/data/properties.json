@@ -10,7 +10,7 @@
             "location": "Parkhill Road, Bexley, Kent DA5",
             "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.85229127902!2d0.13790817687594753!3d51.443229715388874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ae62ea442057%3A0xa98e43dfd9437b6e!2sParkhill%20Rd%2C%20Bexley%2C%20UK!5e1!3m2!1sen!2slk!4v1766842338223!5m2!1sen!2slk",
             "picture": "images/prop1/1webp",
-            "url": "https://www.zoopla.co.uk/for-sale/details/68737506/",
+            "floorplan": "/images/prop1/floorplan.webp",
             "added": {
                 "month": "December",
                 "day": 1,
@@ -35,7 +35,7 @@
                 "location": "Carlton Hill, London NW8",
                 "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.9718726599224!2d-0.1827198247130005!3d51.53551406531528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761aa1f960e9bb%3A0xb37eea83c23d2689!2sCarlton%20Hill%2C%20London%2C%20UK!5e1!3m2!1sen!2slk!4v1766854802736!5m2!1sen!2slk",
                 "picture": "/images/prop2/1.webp",
-                "url": "https://www.zoopla.co.uk/for-sale/details/72031998/",
+                "floorplan": "/images/prop2/floorplan.webp",
                 "added": {
                     "month": "Unknown",
                     "day": null,
@@ -58,9 +58,9 @@
                     "tenure": "Freehold",
                     "description": "An exquisite farmhouse with extensive grounds at Rectory Farm on The Ridgeway, Enfield EN2. Offering five bedrooms, four bathrooms, three reception rooms, and standing on a plot of approximately five acres including additional paddocks and stabling. The property features a grand entrance hall, formal dining room, spacious sitting room with scenic views, traditional farmhouse kitchen with utility room, office, guest WC, and multiple outbuildings including a garage, stable and storage rooms. The landscaped gardens and barn-style spaces provide a rare opportunity for luxurious countryside living close to North London.",  
                     "location": "Rectory Farm, The Ridgeway, Enfield EN2",
-                    "map": "",
+                    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.9611672523743!2d-0.11161132311313493!3d51.673397498562835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487618a528f4000f%3A0x9536fb64fed06124!2sRectory%20Farm%20Shooting%20Ground!5e1!3m2!1sen!2slk!4v1767423385259!5m2!1sen!2slk",
                     "picture": "images/prop3/1.webp",
-                    "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.9611672523747!2d-0.11161132311313726!3d51.67339749856282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487618a528f4000f%3A0x9536fb64fed06124!2sRectory%20Farm%20Shooting%20Ground!5e1!3m2!1sen!2slk!4v1766856693279!5m2!1sen!2slk",
+                    "floorplan": "/images/prop3/floorplan.webp",
                     "added": {
                         "month": "December",
                         "day": 26,
@@ -85,7 +85,7 @@
                     "location": "The Walk, Potters Bar EN6",
                     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.5062948618797!2d-0.1872045231120683!3d51.69584579691898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487622b233c537c1%3A0xca974b817c63d855!2sThe%20Walk%2C%20Potters%20Bar%2C%20UK!5e1!3m2!1sen!2slk!4v1766856877463!5m2!1sen!2slk",
                     "picture": "images/prop4/1.webp",
-                    "url": "https://www.zoopla.co.uk/for-sale/details/70648945/",
+                    "floorplan": "/images/prop4/floorplan.webp",
                     "added": {
                         "month": "Unknown",
                         "day": null,
@@ -110,7 +110,7 @@
                     "location": "Capital Building, Embassy Gardens, London SW11",
                     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.342366073595!2d-0.13768002312219635!3d51.48207641255261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604fca193790d%3A0xd532c61a4145318e!2sCapital%20Building!5e1!3m2!1sen!2slk!4v1766857118128!5m2!1sen!2slk",
                     "picture": "images/prop5/1.webp",
-                    "url": "https://www.zoopla.co.uk/for-sale/details/42110700/",
+                    "floorplan": "/images/prop5/floorplan.webp",
                     "added": {
                         "month": "Unknown",
                         "day": null,
@@ -133,9 +133,9 @@
                     "tenure": "Leasehold",
                     "description": "A purpose-built two bedroom flat positioned on St. Johns Road, Harrow HA1, available for sale. This property features a spacious reception room, fully fitted kitchen, private balcony, underfloor heating, luxury bathroom with en-suite to the master bedroom, built-in wardrobes, secure entry phone system, and a parking space with electric charger in the basement. The development includes landscaped communal gardens and is situated close to Harrow town centre and local train connections. Ideal for first-time buyers or investors.",  
                     "location": "St. Johns Road, Harrow HA1",
-                    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.9431679686!2d-0.33394352311750963!3d51.581023605321825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761375909067f1%3A0xdbb53071d225c144!2sSt%20John&#39;s%20Rd%2C%20Harrow%2C%20UK!5e1!3m2!1sen!2slk!4v1766857515560!5m2!1sen!2slk",
+                    "map":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d735.2388257551456!2d-0.3319774641258891!3d51.5808360962074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2slk!4v1767425230730!5m2!1sen!2slk",
                     "picture": "images/prop6/1.webp",
-                    "url": "htts://www.zoopla.co.uk/for-sale/details/70114030/",
+                    "floorplan": "/images/prop6/floorplan.webp",
                     "added": {
                         "month": "Unknown",
                         "day": null,
@@ -160,7 +160,7 @@
                     "location": "Villiers Avenue, Twickenham TW2",
                     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.672685358663!2d-0.37988532312394296!3d51.44601021518584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876734c9f70cfcb%3A0x1989e04c2a290df3!2sVilliers%20Ave%2C%20Twickenham%2C%20UK!5e1!3m2!1sen!2slk!4v1766857730569!5m2!1sen!2slk",
                     "picture": "images/prop7/1.webp",
-                    "url": "https://www.zoopla.co.uk/for-sale/details/72071072/",
+                    "floorplan": "/images/prop7/floorplan.webp",
                     "added": {
                         "month": "Unknown",
                         "day": null,

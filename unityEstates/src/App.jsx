@@ -1,20 +1,23 @@
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/navbar/navbar'
-import Search from './search'
-import Footer from './components/footer/footer'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
+import Search from "./search";
+import PropertyDetails from "./PropertyDetails";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <>
+    <div className="app-layout">
       <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Search />} />
-        <Route path="/search" element={<Search />} />
-      </Routes>
-      <Footer />
-    </>
-  )
-}
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Search />} />
+          <Route path="/property/:id" element={<PropertyDetails />} />
+        </Routes>
+      </main>
 
-export default App
+      <Footer />
+    </div>
+  );
+}
