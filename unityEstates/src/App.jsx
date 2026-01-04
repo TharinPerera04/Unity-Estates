@@ -3,9 +3,9 @@ import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import Search from "./search";
 import PropertyDetails from "./propertyDetails";
-import Contact from "./Contact";
+import Contact from "./contact";
 import "./App.css";
-import About from "./About";
+import About from "./about";
 
 export default function App() {
   return (
