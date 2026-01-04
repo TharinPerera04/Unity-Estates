@@ -17,22 +17,48 @@ export default function Search() {
   const [favourites, setFavourites] = useState([]);
 
   const isFavourite = (id) => favourites.some((p) => p.id === id);
+
   const addFavourite = (property) => {
     if (!isFavourite(property.id)) setFavourites((prev) => [...prev, property]);
   };
+
   const removeFavourite = (id) => {
     setFavourites((prev) => prev.filter((p) => p.id !== id));
   };
+
   const clearFavourites = () => setFavourites([]);
 
-  const onDragStart = (e, property) => {
+  // ✅ Drag helpers (use a "mode" so we know add vs remove)
+  const onDragStartProperty = (e, property) => {
+    e.dataTransfer.setData("mode", "add");
     e.dataTransfer.setData("property", JSON.stringify(property));
   };
+
+  const onDragStartFavourite = (e, property) => {
+    e.dataTransfer.setData("mode", "remove");
+    e.dataTransfer.setData("property", JSON.stringify(property));
+  };
+
   const allowDrop = (e) => e.preventDefault();
-  const onDrop = (e) => {
+
+  // ✅ Drop into Favourites (add)
+  const onDropToFavourites = (e) => {
     e.preventDefault();
+    const mode = e.dataTransfer.getData("mode");
+    if (mode !== "add") return;
+
     const property = JSON.parse(e.dataTransfer.getData("property"));
     addFavourite(property);
+  };
+
+  // ✅ Drop back to Properties (remove)
+  const onDropToProperties = (e) => {
+    e.preventDefault();
+    const mode = e.dataTransfer.getData("mode");
+    if (mode !== "remove") return;
+
+    const property = JSON.parse(e.dataTransfer.getData("property"));
+    removeFavourite(property.id);
   };
 
   const formatPrice = (price) =>
@@ -130,12 +156,20 @@ export default function Search() {
               <div className="range">
                 <select value={minBeds} onChange={(e) => setMinBeds(e.target.value)}>
                   <option>No min</option>
-                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
                 </select>
                 <span className="dash">–</span>
                 <select value={maxBeds} onChange={(e) => setMaxBeds(e.target.value)}>
                   <option>No max</option>
-                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
                 </select>
               </div>
             </div>
@@ -149,7 +183,9 @@ export default function Search() {
                 />
                 <span>Include Under Offer, Sold STC</span>
               </label>
-              <button type="submit" className="search-btn">Search properties</button>
+              <button type="submit" className="search-btn">
+                Search properties
+              </button>
             </div>
           </form>
         </div>
@@ -157,7 +193,8 @@ export default function Search() {
 
       {/* RESULTS + FAVOURITES */}
       <div className="layout">
-        <section className="results">
+        {/* ✅ Make this a DROP ZONE to remove from favourites */}
+        <section className="results" onDragOver={allowDrop} onDrop={onDropToProperties}>
           <div className="results-head">
             <h3>Properties</h3>
             <p>{filtered.length} results</p>
@@ -173,7 +210,7 @@ export default function Search() {
                   key={p.id}
                   className="prop-card"
                   draggable
-                  onDragStart={(e) => onDragStart(e, p)}
+                  onDragStart={(e) => onDragStartProperty(e, p)}
                 >
                   <div className="prop-img">
                     <img src={image} alt={p.location} />
@@ -210,11 +247,14 @@ export default function Search() {
           </div>
         </section>
 
-        <aside className="favourites" onDrop={onDrop} onDragOver={allowDrop}>
+        {/* ✅ Favourites drop zone to add */}
+        <aside className="favourites" onDrop={onDropToFavourites} onDragOver={allowDrop}>
           <div className="fav-header">
             <h3>❤️ Favourites</h3>
             {favourites.length > 0 && (
-              <button className="clear-btn" onClick={clearFavourites}>Clear all</button>
+              <button className="clear-btn" onClick={clearFavourites}>
+                Clear all
+              </button>
             )}
           </div>
 
@@ -223,13 +263,21 @@ export default function Search() {
           ) : (
             <ul className="fav-list">
               {favourites.map((p) => (
-                <li key={p.id} className="fav-item">
+                <li
+                  key={p.id}
+                  className="fav-item"
+                  draggable
+                  onDragStart={(e) => onDragStartFavourite(e, p)}
+                  title="Drag me back to Properties to remove"
+                >
                   <img src={p.pictures?.[0] || p.picture} alt="" />
                   <div className="fav-info">
                     <span>{formatPrice(p.price)}</span>
                     <small>{p.location}</small>
                   </div>
-                  <button className="remove-btn" onClick={() => removeFavourite(p.id)}>✕</button>
+                  <button className="remove-btn" onClick={() => removeFavourite(p.id)}>
+                    ✕
+                  </button>
                 </li>
               ))}
             </ul>
