@@ -1,3 +1,4 @@
+/* Property detail page, gallery, and map styling. */
 .details-page {
   padding: 20px;
   background: #f4f7fb;
@@ -60,6 +61,11 @@
   font-size: 28px;
   font-weight: 900;
 }
+.track::-webkit-scrollbar {
+  /* Hide scrollbar to keep the slider clean */
+  display: none;
+}
+
 
 .meta {
   color: #64748b;

@@ -1,6 +1,7 @@
 import "./footer.css";
 import logo from "../../assets/logo.png";
 
+// Site footer with brand mark and quick navigation.
 export default function Footer() {
   return (
     <footer className="footer">
@@ -18,6 +19,7 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* Quick navigation column */}
         <div className="footer-col">
           <h4>Quick Links</h4>
           <a href="/">Home</a>
@@ -25,6 +27,7 @@ export default function Footer() {
           <a href="/contact">Contact</a>
         </div>
 
+        {/* Basic contact info column */}
         <div className="footer-col">
           <h4>Contact</h4>
           <p>📧 info@unityestates.com</p>

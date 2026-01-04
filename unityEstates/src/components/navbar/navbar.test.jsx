@@ -2,6 +2,7 @@ import { afterEach, describe, it, expect } from "vitest";
 import { cleanup, render, screen } from "@testing-library/react";
 import Navbar from "./navbar";
 
+// Unit coverage for Navbar links and logo rendering.
 afterEach(() => cleanup());
 
 describe("Navbar Component", () => {

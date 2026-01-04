@@ -1,3 +1,4 @@
+/* Styling for the About page layout and feature cards. */
 .about-page {
   background: #f8fafc;
 }
@@ -47,6 +48,11 @@
 
 .about-card h3 {
   margin-top: 0;
+}
+
+.about-card h3 + p {
+  /* Provide a little breathing room after section headings */
+  margin-top: 4px;
 }
 
 .about-card p {

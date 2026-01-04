@@ -1,5 +1,6 @@
 import "./navbar.css";
 import logo from "../../assets/logo.png";
+// Fixed top navigation with logo and anchor links.
 export default function Navbar() {
   return (  
     <nav className="navbar">
@@ -13,6 +14,7 @@ export default function Navbar() {
         </a>
       </div>
 
+      {/* Simple anchor links (SPA routes handled client-side) */}
       <ul className="links">
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>

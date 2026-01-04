@@ -3,6 +3,7 @@ import { cleanup, render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import Search from "./search";
 
+// Smoke tests to ensure the Search experience renders key UI elements.
 afterEach(() => cleanup());
 
 describe("Search Component (stable tests)", () => {

@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./contact.css";
 
+// Contact form with optimistic success message (no backend wiring yet).
 export default function Contact() {
+  // Track controlled inputs for the form.
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -12,10 +14,12 @@ export default function Contact() {
 
   const [status, setStatus] = useState("");
 
+  // Keep individual field changes in sync with local state.
   const onChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  // Lightweight submit handler that just shows a success toast for now.
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -109,6 +113,7 @@ export default function Contact() {
 
           <button className="send-btn" type="submit">Send Message</button>
 
+          {/* Status message appears after submit */}
           {status && <p className="status">{status}</p>}
         </form>
       </div>

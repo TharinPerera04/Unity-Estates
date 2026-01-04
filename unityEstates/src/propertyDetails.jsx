@@ -3,14 +3,17 @@ import { Link, useParams } from "react-router-dom";
 import data from "./data/properties.json";
 import "./propertyDetails.css";
 
+// Property detail view with image slider, price formatting, and safe map embedding.
 export default function PropertyDetails() {
   const { id } = useParams();
 
+  // Resolve the property once per id change to avoid repeated searches.
   const prop = useMemo(
     () => data.properties.find((p) => String(p.id) === String(id)),
     [id]
   );
 
+  // Limit gallery to six images for a clean slider experience.
   const images = (prop?.pictures || []).slice(0, 6);
   const [active, setActive] = useState(0);
   const trackRef = useRef(null);

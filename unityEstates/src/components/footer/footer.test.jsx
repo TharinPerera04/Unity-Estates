@@ -2,6 +2,7 @@ import { render, screen, cleanup } from "@testing-library/react";
 import { afterEach, describe, it, expect } from "vitest";
 import Footer from "./footer";
 
+// Basic render test for the Footer component.
 afterEach(() => cleanup());
 
 describe("Footer Component", () => {

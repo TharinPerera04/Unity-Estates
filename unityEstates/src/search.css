@@ -1,5 +1,6 @@
+/* Search page filters, grid layout, and favourites sidebar. */
 /* =========================
-   BASE
+  BASE
 ========================= */
 .page {
   width: 100%;
@@ -22,6 +23,7 @@
   background: #f3f5f7;
   border-radius: 18px;
   padding: 22px 22px 18px;
+  /* Soft shadow keeps the bar floating above content */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
@@ -36,6 +38,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px 22px;
+  /* Align fields on the same baseline for tidy rows */
   align-items: end;
 }
 
@@ -81,6 +84,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  /* Stack checkbox above the primary call-to-action */
   justify-content: flex-end;
 }
 
@@ -139,6 +143,7 @@
 
 .cards {
   display: grid;
+  /* Default to three columns on wide screens */
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
@@ -267,6 +272,7 @@
   border: 2px dashed #c7d2fe;
   min-height: 420px;
   height: fit-content;
+  /* Stick the favourites list below the fixed navbar */
   position: sticky;
   top: 110px; /* below navbar */
 }
@@ -308,6 +314,7 @@
   align-items: center;
   background: white;
   border-radius: 12px;
+  /* Compact padding keeps drag-and-drop easy without wasting space */
   padding: 8px;
 }
 

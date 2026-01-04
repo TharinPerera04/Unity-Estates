@@ -1,5 +1,6 @@
+/* App layout styling and global spacing tweaks. */
 /* =========================
-   GLOBAL RESET
+  GLOBAL RESET
 ========================= */
 * {
   margin: 0;
@@ -43,6 +44,7 @@ body {
 .main-content {
   flex: 1;
   width: 100%;
+  /* Keep content clear of fixed navbar */
   padding-top: 80px; /* height of fixed navbar */
   padding-left: 40px;
   padding-right: 40px;

@@ -3,6 +3,7 @@ import data from "./data/properties.json";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
+// Search page with filtering logic plus drag-and-drop favourites.
 export default function Search() {
   const properties = data.properties;
 
@@ -12,13 +13,16 @@ export default function Search() {
   const [maxPrice, setMaxPrice] = useState("No max");
   const [minBeds, setMinBeds] = useState("No min");
   const [maxBeds, setMaxBeds] = useState("No max");
+  // Placeholder toggle for future datasets that include sold/under-offer flags.
   const [includeSold, setIncludeSold] = useState(false);
 
+  // Local-only favourites list; not persisted between sessions.
   const [favourites, setFavourites] = useState([]);
 
   const isFavourite = (id) => favourites.some((p) => p.id === id);
 
   const addFavourite = (property) => {
+    // Guard against duplicates when dragging or clicking repeatedly.
     if (!isFavourite(property.id)) setFavourites((prev) => [...prev, property]);
   };
 
@@ -26,6 +30,7 @@ export default function Search() {
     setFavourites((prev) => prev.filter((p) => p.id !== id));
   };
 
+  // One-click way to clear the saved shortlist.
   const clearFavourites = () => setFavourites([]);
 
   // ✅ Drag helpers (use a "mode" so we know add vs remove)
@@ -69,6 +74,7 @@ export default function Search() {
     return Number(String(val).replaceAll(",", ""));
   };
 
+  // Compute filtered list based on type, price range, and bedroom counts.
   const filtered = useMemo(() => {
     const minP = toNumber(minPrice);
     const maxP = toNumber(maxPrice);
@@ -202,6 +208,7 @@ export default function Search() {
 
           <div className="cards">
             {filtered.map((p) => {
+              // Prefer gallery pictures; fall back to a single picture key.
               const image = p.pictures?.[0] || p.picture;
               const fav = isFavourite(p.id);
 

@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import "./about.css";
 
+// About page describing brand story and value props.
 export default function About() {
   return (
     <div className="about-page">
       <div className="about-content">
+        {/* Intro block with back link and mission statement */}
         <div className="about-top">
           <Link className="back-btn" to="/">← Back</Link>
           <h2>About Unity Estate</h2>
@@ -34,6 +36,7 @@ export default function About() {
           <div className="about-card">
             <h3>Why choose us</h3>
 
+            {/* Feature list highlights three key strengths */}
             <div className="feature">
               <h4>Easy to Use</h4>
               <p>Simple layout so anyone can browse properties easily.</p>
@@ -55,6 +58,7 @@ export default function About() {
           </div>
         </div>
 
+        {/* Footer note keeps year automatic */}
         <div className="about-footer">
           <p>© {new Date().getFullYear()} Unity Estate. All rights reserved.</p>
         </div>

@@ -1,5 +1,6 @@
+/* Fixed navbar styling with gradient branding and responsive links. */
 /* =========================
-   RESET
+  RESET
 ========================= */
 * {
   margin: 0;
@@ -11,6 +12,7 @@
    BODY OFFSET (for fixed navbar)
 ========================= */
 body {
+  /* Offset content so the fixed navbar doesn't overlap pages */
   padding-top: 80px; /* navbar height */
   font-family: Arial, Helvetica, sans-serif;
 }

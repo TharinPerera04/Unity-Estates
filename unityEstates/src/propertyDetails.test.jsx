@@ -2,8 +2,9 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { cleanup } from "@testing-library/react";
-import PropertyDetails from "./PropertyDetails";
+import PropertyDetails from "./propertyDetails";
 
+// Component tests for the PropertyDetails view and its conditional states.
 // Mock the data
 vi.mock("./data/properties.json", () => ({
   default: {
