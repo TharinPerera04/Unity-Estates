@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import data from "./data/properties.json";
-import "./PropertyDetails.css";
+import "./propertyDetails.css";
 
 export default function PropertyDetails() {
   const { id } = useParams();

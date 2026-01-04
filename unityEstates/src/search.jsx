@@ -1,4 +1,4 @@
-import "./Search.css";
+import "./search.css";
 import data from "./data/properties.json";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
